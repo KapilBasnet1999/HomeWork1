@@ -61,11 +61,16 @@ namespace HomeWork1
 
                 case 4:
                     // Defense of Consolas
+                    Console.Title = "Defense of Consolas";
                     Console.Write("Target Row? ");
                     int targetRow = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Target Column? ");
                     int targetColumn = Convert.ToInt32(Console.ReadLine());
 
+                    // For background 
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    
                     homework.TargetRow = targetRow;
                     homework.TargetColumn = targetColumn;
                     Console.WriteLine(homework.GetDeploymentLocations());
